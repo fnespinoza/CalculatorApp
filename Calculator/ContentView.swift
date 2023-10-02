@@ -109,7 +109,6 @@ struct ContentView: View {
         currentValue = numberFormatter.string(from: num) ?? "Error"
     }
 }
-//print ("")
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
