@@ -1,0 +1,24 @@
+# Nombre de workflow
+name: Build App
+
+# Seccion que determina bajo que condiciones se ejecuta tu workflow
+on:
+  # Evento de push
+  push:
+    # Filtro de nombre de la rama(s)
+    branches: solucion
+
+# Pasos generales que se van a ejecutar
+jobs:
+  # Nombre del job
+  build:
+    # Maquina virtual en la que se va a ejecutar el job
+    runs-on: macos-latest
+    # Agrupa los pasos que forman el job 'build'
+    steps:
+      - name: Checkout
+      # Action publica utilizada para copiar el repositorio
+      # https://github.com/actions/checkout
+        uses: actions/checkout@v4
+        with:
+          path: main
