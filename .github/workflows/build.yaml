@@ -28,4 +28,5 @@ jobs:
           xcode-version: latest
       
       - name: Check
-        run: cd main && ls
+        working-directory: main
+        run: xcodebuild -list
