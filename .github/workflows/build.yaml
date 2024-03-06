@@ -24,4 +24,4 @@ jobs:
           path: main
       - uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: 15.2
+          xcode-version: latest
