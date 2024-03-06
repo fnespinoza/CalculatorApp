@@ -28,4 +28,4 @@ jobs:
           xcode-version: latest
       
       - name: Check
-        run: ls
+        run: cd main && ls
